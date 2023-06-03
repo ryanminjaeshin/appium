@@ -4,6 +4,7 @@ import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -37,6 +38,7 @@ public class BaseTest {
 				AndroidDriver androidDriver = new AndroidDriver(new URL("http://127.0.0.1:4723"), uiAutomator2Options);
 	}
 	
+	@AfterClass
 	public void tearDown() {
 		androidDriver.quit();
 		appiumDriverLocalService.stop();

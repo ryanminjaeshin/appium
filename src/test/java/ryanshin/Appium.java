@@ -21,7 +21,6 @@ public class Appium extends BaseTest {
 		// Actual Automation
 		// Xpath, id, className, androidUIAutomtor(AppiumBy.), accessibilityId(AppiumBy.)
 		androidDriver.findElement(AppiumBy.accessibilityId("Preference")).click();
-		tearDown();
 
 	}
 
