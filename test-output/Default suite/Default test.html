@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jun 03 18:01:51 KST 2023</td>
+<td>Started on:</td><td>Sat Jun 03 22:12:49 KST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>1 seconds (1560 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (113 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,29 +77,9 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='ryanshin.Appium.AppiumTest()'><b>AppiumTest</b><br>Test class: ryanshin.Appium</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
-Host info: host: &apos;Ryans-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8ba:cf92:fbfb:8ee%en0&apos;
-Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;11.0.18&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[{appium:deviceName=ryanphone, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=//Users//ryanshin//eclipse-workspace//Appium//src//test//java//resources//ApiDemos-debug.apk}], desiredCapabilities=Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}}]
-Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
-	at ryanshin.Appium.AppiumTest(Appium.java:24)
+<td><div><pre>java.lang.AbstractMethodError: Receiver class io.appium.java_client.service.local.AppiumServiceBuilder does not define or inherit an implementation of the resolved method &apos;abstract void loadSystemProperties()&apos; of abstract class org.openqa.selenium.remote.service.DriverService$Builder.
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:496)
+	at ryanshin.Appium.AppiumTest(Appium.java:23)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -128,30 +108,10 @@ Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName:
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace810576909", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace810576909'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
-Host info: host: &apos;Ryans-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8ba:cf92:fbfb:8ee%en0&apos;
-Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;11.0.18&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [null, newSession {capabilities=[{appium:deviceName=ryanphone, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=//Users//ryanshin//eclipse-workspace//Appium//src//test//java//resources//ApiDemos-debug.apk}], desiredCapabilities=Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}}]
-Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
-	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
-	at ryanshin.Appium.AppiumTest(Appium.java:24)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1219916644", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1219916644'><pre>java.lang.AbstractMethodError: Receiver class io.appium.java_client.service.local.AppiumServiceBuilder does not define or inherit an implementation of the resolved method &apos;abstract void loadSystemProperties()&apos; of abstract class org.openqa.selenium.remote.service.DriverService$Builder.
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:496)
+	at ryanshin.Appium.AppiumTest(Appium.java:23)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -181,7 +141,7 @@ Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName:
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>1</td>
+<td>0</td>
 <td>ryanshin.Appium@53aac487</td></tr>
 </table><p>
 </body>
