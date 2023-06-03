@@ -4,6 +4,8 @@ import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import org.testng.annotations.BeforeClass;
+
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -14,6 +16,7 @@ public class BaseTest {
 	public AndroidDriver androidDriver;
 	public AppiumDriverLocalService appiumDriverLocalService;
 
+	@BeforeClass
 	public void ConfigureAppium() throws MalformedURLException {
 		// programmatically start.
 				AppiumDriverLocalService appiumDriverLocalService = new AppiumServiceBuilder().withAppiumJS(new File("//usr//local//lib//node_modules//appium//build//lib//main.js"))
