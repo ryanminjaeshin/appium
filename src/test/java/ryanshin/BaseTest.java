@@ -20,7 +20,7 @@ public class BaseTest {
 	@BeforeClass
 	public void ConfigureAppium() throws MalformedURLException {
 		// programmatically start.
-				AppiumDriverLocalService appiumDriverLocalService = new AppiumServiceBuilder().withAppiumJS(new File("//usr//local//lib//node_modules//appium//build//lib//main.js"))
+				appiumDriverLocalService = new AppiumServiceBuilder().withAppiumJS(new File("//usr//local//lib//node_modules//appium//build//lib//main.js"))
 						.withIPAddress("/127.0.0.1").usingPort(4723).build();
 				appiumDriverLocalService.start();
 				
