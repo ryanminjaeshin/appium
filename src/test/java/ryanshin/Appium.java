@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 
 public class Appium {
@@ -16,8 +17,10 @@ public class Appium {
 	@Test
 	public void AppiumTest() throws MalformedURLException {
 		
-		// have to tell where is the main.js file.
-		AppiumServiceBuilder appiumServiceBuilder = new AppiumServiceBuilder().withAppiumJS(new File("//usr//local//lib//node_modules//appium//build//lib//main.js"));;
+		// programmatically start.
+		AppiumDriverLocalService appiumServiceBuilder = new AppiumServiceBuilder().withAppiumJS(new File("//usr//local//lib//node_modules//appium//build//lib//main.js"))
+				.withIPAddress("http://127.0.0.1").usingPort(4723).build();
+		appiumServiceBuilder.start();
 		
 		// Appium code => Appium Server => Mobile
 		UiAutomator2Options uiAutomator2Options = new UiAutomator2Options();
@@ -31,7 +34,13 @@ public class Appium {
 		
 		// add url and capabilities in parameter
 		AndroidDriver androidDriver = new AndroidDriver(new URL("http://127.0.0.1:4723"), uiAutomator2Options);
+		
+		// Actual Automation
+		
+		
 		androidDriver.quit();
+		appiumServiceBuilder.stop();
+
 	}
 
 
