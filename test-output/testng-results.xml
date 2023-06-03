@@ -2,20 +2,46 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-03T17:01:25 KST" name="Default suite" finished-at="2023-06-03T17:01:25 KST" duration-ms="102">
+  <suite started-at="2023-06-03T18:01:51 KST" name="Default suite" finished-at="2023-06-03T18:01:53 KST" duration-ms="1560">
     <groups>
     </groups>
-    <test started-at="2023-06-03T17:01:25 KST" name="Default test" finished-at="2023-06-03T17:01:25 KST" duration-ms="102">
+    <test started-at="2023-06-03T18:01:51 KST" name="Default test" finished-at="2023-06-03T18:01:53 KST" duration-ms="1560">
       <class name="ryanshin.Appium">
-        <test-method signature="AppiumTest()[pri:0, instance:ryanshin.Appium@428640fa]" started-at="2023-06-03T17:01:25 KST" name="AppiumTest" finished-at="2023-06-03T17:01:25 KST" duration-ms="44" status="FAIL">
-          <exception class="java.lang.NoClassDefFoundError">
+        <test-method signature="AppiumTest()[pri:0, instance:ryanshin.Appium@53aac487]" started-at="2023-06-03T18:01:51 KST" name="AppiumTest" finished-at="2023-06-03T18:01:53 KST" duration-ms="1498" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[org/openqa/selenium/remote/AcceptedW3CCapabilityKeys]]>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: 'Ryans-MacBook-Pro.local', ip: 'fe80:0:0:0:8ba:cf92:fbfb:8ee%en0'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '11.0.18'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=ryanphone, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=//Users//ryanshin//eclipse-workspace//Appium//src//test//java//resources//ApiDemos-debug.apk}], desiredCapabilities=Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}}]
+Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: org/openqa/selenium/remote/AcceptedW3CCapabilityKeys
-at io.appium.java_client.remote.options.BaseOptions.<clinit>(BaseOptions.java:54)
-at ryanshin.Appium.AppiumTest(Appium.java:17)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: 'Ryans-MacBook-Pro.local', ip: 'fe80:0:0:0:8ba:cf92:fbfb:8ee%en0'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '11.0.18'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=ryanphone, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=//Users//ryanshin//eclipse-workspace//Appium//src//test//java//resources//ApiDemos-debug.apk}], desiredCapabilities=Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}}]
+Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:80)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:92)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:117)
+at ryanshin.Appium.AppiumTest(Appium.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -44,14 +70,9 @@ at org.testng.TestNG.run(TestNG.java:1067)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.AcceptedW3CCapabilityKeys
-at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
-at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
-at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
-... 30 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AppiumTest -->
