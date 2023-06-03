@@ -21,8 +21,8 @@ public class BaseTest {
 	public void ConfigureAppium() throws MalformedURLException {
 		// programmatically start.
 				appiumDriverLocalService = new AppiumServiceBuilder().withAppiumJS(new File("//usr//local//lib//node_modules//appium//build//lib//main.js"))
-						.withIPAddress("/127.0.0.1").usingPort(4723).build();
-				appiumDriverLocalService.start();
+						.withIPAddress("127.0.0.1").usingPort(4723).build();
+//				appiumDriverLocalService.start();
 				
 				// Appium code => Appium Server => Mobile
 				UiAutomator2Options uiAutomator2Options = new UiAutomator2Options();

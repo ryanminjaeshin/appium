@@ -5,7 +5,9 @@
     <classes>
       <class name="ryanshin.Appium">
         <methods>
-          <include name="AppiumTest"/>
+          <include name="WifiSettingTest"/>
+          <include name="ConfigureAppium"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- ryanshin.Appium -->
     </classes>
