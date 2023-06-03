@@ -17,8 +17,11 @@ public class Appium {
 		UiAutomator2Options uiAutomator2Options = new UiAutomator2Options();
 		// set which device I want to automate
 		uiAutomator2Options.setDeviceName("ryanphone");
+		// set which app I want to automate
+		uiAutomator2Options.setApp("//Users//ryanshin//eclipse-workspace//Appium//src//test//java//resources//ApiDemos-debug.apk");
 		
-		AndroidDriver androidDriver = new AndroidDriver(new URL("http://127.0.0.1:4723"), null);
+		// add url and capabilities in parameter
+		AndroidDriver androidDriver = new AndroidDriver(new URL("http://127.0.0.1:4723"), uiAutomator2Options);
 		
 	}
 
