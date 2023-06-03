@@ -19,7 +19,7 @@ public class Appium {
 		
 		// programmatically start.
 		AppiumDriverLocalService appiumServiceBuilder = new AppiumServiceBuilder().withAppiumJS(new File("//usr//local//lib//node_modules//appium//build//lib//main.js"))
-				.withIPAddress("http://127.0.0.1").usingPort(4723).build();
+				.withIPAddress("/127.0.0.1").usingPort(4723).build();
 		appiumServiceBuilder.start();
 		
 		// Appium code => Appium Server => Mobile
