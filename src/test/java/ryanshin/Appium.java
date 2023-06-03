@@ -16,7 +16,7 @@ public class Appium {
 	
 	// Run with TestNG
 	@Test
-	public void AppiumTest() throws MalformedURLException {
+	public void WifiSettingTest() throws MalformedURLException {
 		
 		// programmatically start.
 		AppiumDriverLocalService appiumServiceBuilder = new AppiumServiceBuilder().withAppiumJS(new File("//usr//local//lib//node_modules//appium//build//lib//main.js"))
