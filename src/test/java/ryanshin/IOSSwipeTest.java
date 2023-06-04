@@ -29,6 +29,7 @@ public class IOSSwipeTest extends IOSBaseTest {
 		    driver.executeScript("mobile:swipe", params1);
 	    }
 	    
+	    driver.navigate().back();
 	    driver.findElement(AppiumBy.accessibilityId("Albums")).click(); // cleanup
 		
 	}
