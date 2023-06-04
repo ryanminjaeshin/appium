@@ -28,10 +28,11 @@ public class IOSBaseTest {
 //			
 				XCUITestOptions options = new XCUITestOptions();
 				options.setDeviceName("iPhone 14 Pro");
-				options.setApp("/Users/ryanshin/Downloads/ios-uicatalog-master/UIKitCatalog.app");
+				options.setApp("/Users/ryanshin/Desktop/UIKitCatalog.app");
 				options.setPlatformVersion("16.4");
 				// Appium -> WedDriver Agent -> IOS Apps.
 				options.setWdaLaunchTimeout(Duration.ofSeconds(20));
+				
 				// add url and capabilities in parameter
 				driver = new IOSDriver(new URL("http://127.0.0.1:4723"), options);
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
