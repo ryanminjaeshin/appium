@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jun 03 22:53:48 KST 2023</td>
+<td>Started on:</td><td>Sun Jun 04 20:04:24 KST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (117 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1203 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,9 +77,29 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='ryanshin.Appium.ConfigureAppium()'><b>ConfigureAppium</b><br>Test class: ryanshin.Appium</td>
-<td><div><pre>java.lang.AbstractMethodError: Receiver class io.appium.java_client.service.local.AppiumServiceBuilder does not define or inherit an implementation of the resolved method &apos;abstract void loadSystemProperties()&apos; of abstract class org.openqa.selenium.remote.service.DriverService$Builder.
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:496)
-	at ryanshin.BaseTest.ConfigureAppium(BaseTest.java:24)
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Ryans-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8ba:cf92:fbfb:8ee%en0&apos;
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;11.0.18&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=ryanphone, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=//Users//ryanshin//eclipse-workspace//Appium//src//test//java//resources//ApiDemos-debug.apk}], desiredCapabilities=Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}}]
+Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at ryanshin.BaseTest.ConfigureAppium(BaseTest.java:39)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -106,10 +126,30 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1572256205", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1572256205'><pre>java.lang.AbstractMethodError: Receiver class io.appium.java_client.service.local.AppiumServiceBuilder does not define or inherit an implementation of the resolved method &apos;abstract void loadSystemProperties()&apos; of abstract class org.openqa.selenium.remote.service.DriverService$Builder.
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:496)
-	at ryanshin.BaseTest.ConfigureAppium(BaseTest.java:24)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2142565033", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2142565033'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Ryans-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8ba:cf92:fbfb:8ee%en0&apos;
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;11.0.18&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=ryanphone, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=//Users//ryanshin//eclipse-workspace//Appium//src//test//java//resources//ApiDemos-debug.apk}], desiredCapabilities=Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}}]
+Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at ryanshin.BaseTest.ConfigureAppium(BaseTest.java:39)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -137,8 +177,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>ryanshin.Appium@2892d68</td></tr>
+<td>1</td>
+<td>ryanshin.Appium@5b1669c0</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -152,7 +192,7 @@ function toggleAllBoxes() {
 <td title='ryanshin.Appium.tearDown()'><b>tearDown</b><br>Test class: ryanshin.Appium</td>
 <td></td>
 <td>0</td>
-<td>ryanshin.Appium@2892d68</td></tr>
+<td>ryanshin.Appium@5b1669c0</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -164,9 +204,29 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='ryanshin.Appium.WifiSettingTest()'><b>WifiSettingTest</b><br>Test class: ryanshin.Appium</td>
-<td><div><pre>java.lang.AbstractMethodError: Receiver class io.appium.java_client.service.local.AppiumServiceBuilder does not define or inherit an implementation of the resolved method &apos;abstract void loadSystemProperties()&apos; of abstract class org.openqa.selenium.remote.service.DriverService$Builder.
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:496)
-	at ryanshin.BaseTest.ConfigureAppium(BaseTest.java:24)
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Ryans-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8ba:cf92:fbfb:8ee%en0&apos;
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;11.0.18&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=ryanphone, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=//Users//ryanshin//eclipse-workspace//Appium//src//test//java//resources//ApiDemos-debug.apk}], desiredCapabilities=Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}}]
+Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at ryanshin.BaseTest.ConfigureAppium(BaseTest.java:39)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -193,10 +253,30 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1330400026", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1330400026'><pre>java.lang.AbstractMethodError: Receiver class io.appium.java_client.service.local.AppiumServiceBuilder does not define or inherit an implementation of the resolved method &apos;abstract void loadSystemProperties()&apos; of abstract class org.openqa.selenium.remote.service.DriverService$Builder.
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:496)
-	at ryanshin.BaseTest.ConfigureAppium(BaseTest.java:24)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1232703108", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1232703108'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Ryans-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:8ba:cf92:fbfb:8ee%en0&apos;
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.2.1&apos;, java.version: &apos;11.0.18&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=ryanphone, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=//Users//ryanshin//eclipse-workspace//Appium//src//test//java//resources//ApiDemos-debug.apk}], desiredCapabilities=Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}}]
+Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at ryanshin.BaseTest.ConfigureAppium(BaseTest.java:39)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -225,7 +305,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>ryanshin.Appium@2892d68</td></tr>
+<td>ryanshin.Appium@5b1669c0</td></tr>
 </table><p>
 </body>
 </html>

@@ -5,6 +5,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumBy;
@@ -25,6 +26,8 @@ public class Appium extends BaseTest {
 		androidDriver.findElement(AppiumBy.accessibilityId("3. Preference dependencies")).click();
 		androidDriver.findElement(By.id("android:id/checkbox")).click();
 		androidDriver.findElement(By.xpath("(//android.widget.RelativeLayout)[2]")).click();
+		String alertTitle = androidDriver.findElement(By.id("android:id/alerTitle")).getText();
+		Assert.assertEquals(alertTitle, "WiFi settings");
 		androidDriver.findElement(By.id("android:id/edit")).sendKeys("Ryan wifi");
 		androidDriver.findElements(AppiumBy.className("android.widget.Button")).get(1).click();
 	}

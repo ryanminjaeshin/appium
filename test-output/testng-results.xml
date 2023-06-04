@@ -2,20 +2,46 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-03T22:53:48 KST" name="Default suite" finished-at="2023-06-03T22:53:48 KST" duration-ms="117">
+  <suite started-at="2023-06-04T20:04:24 KST" name="Default suite" finished-at="2023-06-04T20:04:26 KST" duration-ms="1203">
     <groups>
     </groups>
-    <test started-at="2023-06-03T22:53:48 KST" name="Default test" finished-at="2023-06-03T22:53:48 KST" duration-ms="117">
+    <test started-at="2023-06-04T20:04:24 KST" name="Default test" finished-at="2023-06-04T20:04:26 KST" duration-ms="1203">
       <class name="ryanshin.Appium">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:ryanshin.Appium@2892d68]" started-at="2023-06-03T22:53:48 KST" name="ConfigureAppium" finished-at="2023-06-03T22:53:48 KST" duration-ms="55" status="FAIL">
-          <exception class="java.lang.AbstractMethodError">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:ryanshin.Appium@5b1669c0]" started-at="2023-06-04T20:04:24 KST" name="ConfigureAppium" finished-at="2023-06-04T20:04:25 KST" duration-ms="1105" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[Receiver class io.appium.java_client.service.local.AppiumServiceBuilder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.]]>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: 'Ryans-MacBook-Pro.local', ip: 'fe80:0:0:0:8ba:cf92:fbfb:8ee%en0'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '11.0.18'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=ryanphone, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=//Users//ryanshin//eclipse-workspace//Appium//src//test//java//resources//ApiDemos-debug.apk}], desiredCapabilities=Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}}]
+Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AbstractMethodError: Receiver class io.appium.java_client.service.local.AppiumServiceBuilder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:496)
-at ryanshin.BaseTest.ConfigureAppium(BaseTest.java:24)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: 'Ryans-MacBook-Pro.local', ip: 'fe80:0:0:0:8ba:cf92:fbfb:8ee%en0'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '11.0.18'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=ryanphone, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=//Users//ryanshin//eclipse-workspace//Appium//src//test//java//resources//ApiDemos-debug.apk}], desiredCapabilities=Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}}]
+Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at ryanshin.BaseTest.ConfigureAppium(BaseTest.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -44,19 +70,45 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AbstractMethodError -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="WifiSettingTest()[pri:0, instance:ryanshin.Appium@2892d68]" started-at="2023-06-03T22:53:48 KST" name="WifiSettingTest" finished-at="2023-06-03T22:53:48 KST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.AbstractMethodError">
+        <test-method signature="WifiSettingTest()[pri:0, instance:ryanshin.Appium@5b1669c0]" started-at="2023-06-04T20:04:26 KST" name="WifiSettingTest" finished-at="2023-06-04T20:04:26 KST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[Receiver class io.appium.java_client.service.local.AppiumServiceBuilder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.]]>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: 'Ryans-MacBook-Pro.local', ip: 'fe80:0:0:0:8ba:cf92:fbfb:8ee%en0'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '11.0.18'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=ryanphone, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=//Users//ryanshin//eclipse-workspace//Appium//src//test//java//resources//ApiDemos-debug.apk}], desiredCapabilities=Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}}]
+Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AbstractMethodError: Receiver class io.appium.java_client.service.local.AppiumServiceBuilder does not define or inherit an implementation of the resolved method 'abstract void loadSystemProperties()' of abstract class org.openqa.selenium.remote.service.DriverService$Builder.
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:496)
-at ryanshin.BaseTest.ConfigureAppium(BaseTest.java:24)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: 'Ryans-MacBook-Pro.local', ip: 'fe80:0:0:0:8ba:cf92:fbfb:8ee%en0'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '11.0.18'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=ryanphone, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=//Users//ryanshin//eclipse-workspace//Appium//src//test//java//resources//ApiDemos-debug.apk}], desiredCapabilities=Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}}]
+Capabilities {appium:app: //Users//ryanshin//eclipse-..., appium:automationName: UIAutomator2, appium:deviceName: ryanphone, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at ryanshin.BaseTest.ConfigureAppium(BaseTest.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -85,11 +137,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AbstractMethodError -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WifiSettingTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:ryanshin.Appium@2892d68]" started-at="2023-06-03T22:53:48 KST" name="tearDown" finished-at="2023-06-03T22:53:48 KST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ryanshin.Appium@5b1669c0]" started-at="2023-06-04T20:04:26 KST" name="tearDown" finished-at="2023-06-04T20:04:26 KST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
